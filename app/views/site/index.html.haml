@@ -1,0 +1,54 @@
+.row
+  .col-lg-3.col-md-1.col-sm-1.col-xs-1
+  .col-lg-6.col-md-10.col-sm-10.col-xs-10
+    %h1 Wireframe example:
+    .row
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+        .wrapper
+          .iphone
+            .power
+            .lock
+            .volume.up
+            .volume.down
+            .camera
+            .speaker
+            .screen
+              .phone
+                :javascript
+                  $(function() {
+                    $('.phone')
+                      // Initialize the plugin
+                      .fbMessenger({
+                        // options go here
+                      })
+                      // Schedule some interaction:
+                      .fbMessenger('start', { delay: 5000 })
+                      .fbMessenger('message', 'user', 'Get Started', { delay: 250 })
+                      .fbMessenger('typingIndicator', { delay: 1000 })
+                      .fbMessenger('message', 'bot', "Hello, I am your MP's bot. I help your MP stay in touch with you and other constituents so your MP can best represent you all.", { delay: 2000 })
+                      .fbMessenger('typingIndicator', { delay: 1000 })
+                      .fbMessenger('message', 'bot', 'We are always striving to learn more about our constituents. Would you like to take our survey? 📊', { delay: 1500 })
+                      .fbMessenger('showQuickReplies', [ 'Yes', 'No' ], { delay: 2000 })
+                      .fbMessenger('selectQuickReply', 0, { delay: 1000 })
+                      .fbMessenger('message', 'bot', 'Great! I will send you a few questions now!', { delay: 2000 })
+                      .fbMessenger('typingIndicator', { delay: 500 })
+                      .fbMessenger('message', 'bot', 'Do you think I have done a good job as your MP so far?', { delay: 3000 })
+                      .fbMessenger('showQuickReplies', [ 'Yes', 'No', 'Undecided' ], { delay: 2000 })
+                      .fbMessenger('selectQuickReply', 0, { delay: 1000 })
+                      .fbMessenger('message', 'bot', 'What issue do you care about most?', { delay: 1000 })
+                      .fbMessenger('showQuickReplies', [ 'Housing', 'NHS', 'Defence', 'Economy', 'Education', 'Environment' ], { delay: 2000 })
+                      .fbMessenger('scrollQuickReplies', 5, { delay: 2000 })
+                      .fbMessenger('scrollQuickReplies', 1, { delay: 1000 })
+                      .fbMessenger('selectQuickReply', 1, { delay: 1000 })
+                      .fbMessenger('message', 'bot', 'Do you have any concerns which you would like me to know about?', { delay: 4000 })
+                      .fbMessenger('message', 'user', 'Yes, thanks for asking. I would like to point out that the local schools are not receiving enough funding. I hope you can do something about this.', { delay: 1000 })
+                      .fbMessenger('typingIndicator', { delay: 1000 })
+                      .fbMessenger('message', 'bot', 'Thanks for your answers. I will pass them on to your MP and we will be in touch soon.', { delay: 10000 })
+                      .fbMessenger('message', 'bot', '', { delay: 5000 })
+                      // And trigger the execution
+                      .fbMessenger('run');
+                    });
+            .button
+              .square
+  .col-lg-3.col-md-1.col-sm-1.col-xs-1
+
