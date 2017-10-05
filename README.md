@@ -1,24 +1,18 @@
-# README
+# Bot Wireframe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a wireframe environment for our bots.
 
-Things you may want to cover:
+To change the bot go to
+```app/views/site/index.html.haml```
+and change it according to your needs.
 
-* Ruby version
+To run locally execute
+```rails s```
+from root directory.
 
-* System dependencies
+The site is displayed at
+```localhost:3000```
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Contribution & Thanks
+This wireframe utilises https://github.com/digitalbreed/jquery.fbmessenger
