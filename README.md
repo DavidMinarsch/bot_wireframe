@@ -1,4 +1,4 @@
-# Bot Wireframe
+# Bot Wireframe
 
 ## Setup
 Make sure rails is installed and that you have installed all gems.
