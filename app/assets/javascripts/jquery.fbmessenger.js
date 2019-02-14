@@ -16,7 +16,7 @@
 		botBannerUrl: 'assets/botbanner.png',
 		botName: 'Representative Bot',
 		botCategory: 'Software',
-		botWelcomeMessage: 'azembly is a platform where you can voice your opinion.',
+		botWelcomeMessage: 'a is a platform where you can voice your opinion.',
 		leftUser: 'bot',
 		rightUser: 'user',
 		displayedCarrier: '',
